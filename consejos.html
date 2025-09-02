@@ -42,7 +42,73 @@
                     </div>
                 </div>
 
+                <div class="card mb-3 border-start border-info border-4">
+                    <div class="card-body">
+                        <h4 class="card-title"><i class="bi bi-wifi text-info"></i> Navegación Segura</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle text-success"></i> Usa redes WiFi seguras y confiables</li>
+                            <li><i class="bi bi-check-circle text-success"></i> Evita transacciones en redes públicas</li>
+                            <li><i class="bi bi-check-circle text-success"></i> Mantén tu navegador actualizado</li>
+                            <li><i class="bi bi-check-circle text-success"></i> Usa una VPN cuando sea necesario</li>
+                        </ul>
+                    </div>
+                </div>
 
+                <div class="text-center">
+                    <button class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#securityTestModal">
+                        <i class="bi bi-clipboard-check"></i> ¡Haz el Test de Seguridad!
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <h2 class="mb-4"><i class="bi bi-envelope text-primary"></i> Solicitar Información</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <form id="contactForm" novalidate>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre *</label>
+                                <input type="text" class="form-control" id="nombre" required>
+                                <div class="invalid-feedback">Por favor ingresa tu nombre.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email *</label>
+                                <input type="email" class="form-control" id="email" required>
+                                <div class="invalid-feedback">Por favor ingresa un email válido.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Telefono</label>
+                                <input type="tel" class="form-control" id="telefono">
+                                <div class="invalid-feedback">Por favor ingresa un teléfono válido.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="empresa" class="form-label">Mensaje *</label>
+                                <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+                                <div class="invalid-feedback">Por favor ingresa tu mensaje.</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="tema" class="form-label">Tema de Consulta</label>
+                                <select class="form-select" id="tema">
+                                    <option value="">Selecciona un tema</option>
+                                    <option value="phishing">Protección contra Phishing</option>
+                                    <option value="malware">Prevención de Malware</option>
+                                    <option value="passwords">Gestión de Contraseñas</option>
+                                    <option value="training">Capacitación en Seguridad</option>
+                                    <option value="audit">Auditoría de Seguridad</option>
+                                    <option value="other">Otro</option>
+                                </select>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100">
+                                <i class="bi bi-send"></i> Enviar Consulta
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
