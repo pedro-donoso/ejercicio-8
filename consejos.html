@@ -147,14 +147,44 @@
                                 </div>
                             </div>
                         </div>
-
-                        
-
                     </div>
+
+                    <div id="quizResults">
+                        <div class="text-center">
+                            <h4>¡Test Completado!</h4>
+                            <div id="scoreDisplay" class="p-3 rounded mb-3 f2-2 fw-bold"></div>
+                            <div id="feedback"></div>
+                            <button class="btn btn-primary mt-3" onclick="restartQuiz()">Volver a hacer el test</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary" id="submitQuiz" onclick="submitQuiz()">
+                        Ver Resultados
+                    </button>
                 </div>
             </div>
         </div>
     </div>
-    
+
+    <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="confirmModalLabel">
+                        <i class="bi bi-check-circle"></i> Mensaje Enviado
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>¡Gracias por contactarnos! Hemos recibido tu consulta y te responderemos a la brevedad.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Entendido</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
