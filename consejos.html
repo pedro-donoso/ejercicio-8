@@ -1,11 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Consejos de Seguridad - Protección en Línea</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
 </head>
-<body>
-    
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">Ciberseguridad</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="navbar-item"><a class="nav-link active" href="./index.html">Inicio</a></li>
+                    <li class="navbar-item"><a class="nav-link active" href="./amenazas.html">Amenazas Comunes</a></li>
+                    <li class="navbar-item"><a class="nav-link active" href="./consejos.html">Consejos de Seguridad</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container py-4">
+        <div class="bg-primary text-white p-4 rounded mb-4 text-center">
+            <h1 class="mb-3"><i class="bi bi-shield-check"></i> Consejos de Seguridad</h1>
+            <p class="lead">Protégete en línea con nuestras mejores prácticas y conoce tu nivel de seguridad</p>
+        </div>
+        <div class="row">
+            <!-- Título centrado -->
+            <div class="col-12">
+                <h2 class="mb-4 text-center"><i class="bi bi-lightbulb text-warning"></i> Buenas Prácticas de Seguridad</h2>
+            </div>
+            
+            <!-- Cards en columnas -->
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 border-start border-primary border-4">
+                    <div class="card-body">
+                        <h4 class="card-title"><i class="bi bi-key text-primary"></i> Contraseñas Seguras</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle text-success"></i> Usa contraseñas únicas para cada cuenta</li>
+                            <li><i class="bi bi-check-circle text-success"></i> Combina mayúsculas, minúsculas, números y símbolos</li>
+                            <li><i class="bi bi-check-circle text-success"></i> Utiliza un gestor de contraseñas confiable</li>
+                            <li><i class="bi bi-check-circle text-success"></i> Activa la autenticación de dos factores (2FA)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 border-start border-warning border-4">
+                    <div class="card-body">
+                        <h4 class="card-title"><i class="bi bi-envelope-exclamation text-warning"></i> Protección contra Phishing</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle text-success"></i> Verifica siempre la dirección del remitente</li>
+                            <li><i class="bi bi-check-circle text-success"></i> No hagas clic en enlaces sospechosos</li>
+                            <li><i class="bi bi-check-circle text-success"></i> Accede directamente a los sitios web oficiales</li>
+                            <li><i class="bi bi-check-circle text-success"></i> Desconfía de mensajes urgentes o amenazantes</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4">
+                <div class="card h-100 border-start border-info border-4">
+                    <div class="card-body">
+                        <h4 class="card-title"><i class="bi bi-wifi text-info"></i> Navegación Segura</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-circle text-success"></i> Usa redes WiFi seguras y confiables</li>
+                            <li><i class="bi bi-check-circle text-success"></i> Evita transacciones en redes públicas</li>
+                            <li><i class="bi bi-check-circle text-success"></i> Mantén tu navegador actualizado</li>
+                            <li><i class="bi bi-check-circle text-success"></i> Usa una VPN cuando sea necesario</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                <div class="col-12 text-center">
+                    <button class="btn btn-danger btn-lg" data-bs-toggle="modal" data-bs-target="#securityTestModal">
+                        <i class="bi bi-clipboard-check"></i> Consejos de Seguridad
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="securityTestModal" tabindex="-1" aria-labelledby="securityTestModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="securityTestModalLabel">
+                        <i class="bi bi-shield-check"></i> La mejor práctica para crear contraseñas seguras
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="quizContainer">
+                        <div class="card mb-3" data-question="0">
+                            <div class="card-body">
+                                <div class="list-group">
+                                    <p>
+                                        Usar contraseñas únicas con combinación de letras, números y símbolos
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
