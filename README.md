@@ -15,6 +15,10 @@ Bootstrap: Framework CSS para diseño responsivo
 CDN: Enlaces externos para Bootstrap (sin dependencias locales)
 
 📱 Secciones del Sitio
+
+Inicio 
+
+Amenazas Comunes:
 1. Tarjetas de Amenazas
 Presenta las cuatro principales amenazas de ciberseguridad:
 
@@ -30,3 +34,5 @@ Responsive: Se adaptan columnas en desktop y móvil
 
 2. Casos Reales
 Sección dedicada a ejemplos reales de ataques de ciberseguridad
+
+Consejos de Seguridad
