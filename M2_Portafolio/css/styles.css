@@ -1,0 +1,23 @@
+:root {
+    --primary-color: #2c5aa0;
+    --secondary-color: #1e3d6f;
+    --accent-color: #4dabf7;
+    --text-light: #ffffff;
+    --text-dark: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+.navbar {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+}
