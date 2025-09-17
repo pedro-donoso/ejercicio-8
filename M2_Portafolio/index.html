@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-code"></i> Pedro_Donoso
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Acerca de</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experiencia</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#footer">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4">Pedro Donoso</h1>
+                    <p class="lead mt-5">Front-end Developer especializado en Vue.js</p>
+                    <p>Desarrollador web con experiencia en JavaScript, Vue.js y tecnologías modernas.</p>
+                    <a href="#footer" class="btn btn-primary btn-lg me-3">Contáctame</a>
+                    <a href="#about" class="btn btn-outline-light btn-lg">Conoce más</a>
+                </div>
+                <div class="col-lg-6 text-center">
+                    <div>
+                    <img src="./img/foto.jpeg" alt="foto" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 mt-5">Acerca de Mí</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <p class="lead text-center"> 
+                        Desarrollador front-end con experiencia en tecnologías web modernas y enfoque en Vue.js.
+                    </p>
+                    <p>
+                        Mi trayectoria combina formación académica en Geomática con especialización en desarrollo web, proporcionándome una perspectiva única para resolver problemas complejos
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 mt-5">Habilidades Técnicas</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="skill-card text-center p-4">
+                        <i class="fab fa-html5 skill-icon"></i>
+                        <h4>HTML5</h4>
+                        <p>Estructura semántica</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="skill-card text-center p-4">
+                        <i class="fab fa-css3-alt skill-icon"></i>
+                        <h4>CSS3</h4>
+                        <p>Diseño responsivo</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="skill-card text-center p-4">
+                        <i class="fab fa-js skill-icon"></i>
+                        <h4>JavaScript</h4>
+                        <p>ES6+ moderno</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="skill-card text-center p-4">
+                        <i class="fab fa-vuejs skill-icon"></i>
+                        <h4>Vue.js</h4>
+                        <p>Framework reactivo</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="skill-card text-center p-4">
+                        <i class="fab fa-bootstrap skill-icon"></i>
+                        <h4>Bootstrap</h4>
+                        <p>Framework CSS</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="skill-card text-center p-4">
+                        <i class="fab fa-git-alt skill-icon"></i>
+                        <h4>Git</h4>
+                        <p>Control de versiones</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 mt-5">Experiencia</h2>
+            <div class="timeline">
+                <div class="timeline-item mb-4">
+                    <h4>Front-end Developer Vue.js</h4>
+                    <h5 class="text-muted">Programa Talento Digital (2020)</h5>
+                    <p>Bootcamp especializado en Vue.js, JavaScript y CSS avanzado.</p>
+                    <span class="badge bg-primary me-2">Vue.js</span>
+                    <span class="badge bg-primary">JavaScript</span>
+                </div>
+                <div class="timeline-item mb-4">
+                    <h4>Investigador Smart Cities</h4>
+                    <h5 class="text-muted">Universidad de Santiago (2019)</h5>
+                    <p>Investigación en Big Data y Ciudades Inteligentes.</p>
+                    <span class="badge bg-secondary me-2">Big Data</span>
+                    <span class="badge bg-secondary">GIS</span>
+                </div>
+                <div class="timeline-item">
+                    <h4>Administrador GIS</h4>
+                    <h5 class="text-muted">Oficina de Catastro Lo Prado (2016-2018)</h5>
+                    <p>Desarrollo de plataformas web con ArcGIS y QGIS.</p>
+                    <span class="badge bg-success me-2">ArcGIS</span>
+                    <span class="badge bg-success">WebMapping</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-4" id="footer">
+        <div class="container text-center">
+            <p>2025 Pedro Donoso. Sin derechos reservados.</p>
+            <div class="social-links">
+                <a href="https://github.com/pedro-donoso" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://linkedin.com/in/pedro-donoso-23059a379/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:pedro.eduardo.donoso@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                </a>    
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <script src="jquery-custom.js"></script>
+</body>
+</html>
